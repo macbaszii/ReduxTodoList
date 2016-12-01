@@ -9,7 +9,7 @@
 import Foundation
 import ReSwift
 
-struct State: StateType {
+struct TodoListState: StateType {
     var itemCount = 0
     var items = [String]()
 }

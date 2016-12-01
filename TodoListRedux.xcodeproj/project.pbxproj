@@ -13,9 +13,9 @@
 		DDCC15CB1DF0671600B8076F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDCC15C91DF0671600B8076F /* LaunchScreen.storyboard */; };
 		DDCC15D61DF0671600B8076F /* TodoListReduxTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDCC15D51DF0671600B8076F /* TodoListReduxTests.swift */; };
 		DDCC15E11DF0677100B8076F /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDCC15E01DF0677100B8076F /* ListViewController.swift */; };
-		DDCC15E31DF068A400B8076F /* State.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDCC15E21DF068A400B8076F /* State.swift */; };
-		DDCC15E51DF06B3000B8076F /* Action.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDCC15E41DF06B3000B8076F /* Action.swift */; };
-		DDCC15E71DF06BEC00B8076F /* Reducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDCC15E61DF06BEC00B8076F /* Reducer.swift */; };
+		DDCC15E31DF068A400B8076F /* TodoListState.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDCC15E21DF068A400B8076F /* TodoListState.swift */; };
+		DDCC15E51DF06B3000B8076F /* TodoListActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDCC15E41DF06B3000B8076F /* TodoListActions.swift */; };
+		DDCC15E71DF06BEC00B8076F /* TodoListReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDCC15E61DF06BEC00B8076F /* TodoListReducer.swift */; };
 		DDCC15E91DF0756900B8076F /* ListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDCC15E81DF0756900B8076F /* ListViewModel.swift */; };
 		FA3201AAF3071683D1CDA60B /* Pods_TodoListRedux.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B6CA221E4A12F3E631EEBB4 /* Pods_TodoListRedux.framework */; };
 /* End PBXBuildFile section */
@@ -43,9 +43,9 @@
 		DDCC15D51DF0671600B8076F /* TodoListReduxTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoListReduxTests.swift; sourceTree = "<group>"; };
 		DDCC15D71DF0671600B8076F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DDCC15E01DF0677100B8076F /* ListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
-		DDCC15E21DF068A400B8076F /* State.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = State.swift; sourceTree = "<group>"; };
-		DDCC15E41DF06B3000B8076F /* Action.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Action.swift; sourceTree = "<group>"; };
-		DDCC15E61DF06BEC00B8076F /* Reducer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reducer.swift; sourceTree = "<group>"; };
+		DDCC15E21DF068A400B8076F /* TodoListState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TodoListState.swift; sourceTree = "<group>"; };
+		DDCC15E41DF06B3000B8076F /* TodoListActions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TodoListActions.swift; sourceTree = "<group>"; };
+		DDCC15E61DF06BEC00B8076F /* TodoListReducer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TodoListReducer.swift; sourceTree = "<group>"; };
 		DDCC15E81DF0756900B8076F /* ListViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListViewModel.swift; sourceTree = "<group>"; };
 		F1C6CC200C74574D8EDD8498 /* Pods-TodoListRedux.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TodoListRedux.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TodoListRedux/Pods-TodoListRedux.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -112,9 +112,9 @@
 				DDCC15C01DF0671600B8076F /* AppDelegate.swift */,
 				DDCC15E01DF0677100B8076F /* ListViewController.swift */,
 				DDCC15E81DF0756900B8076F /* ListViewModel.swift */,
-				DDCC15E21DF068A400B8076F /* State.swift */,
-				DDCC15E41DF06B3000B8076F /* Action.swift */,
-				DDCC15E61DF06BEC00B8076F /* Reducer.swift */,
+				DDCC15E21DF068A400B8076F /* TodoListState.swift */,
+				DDCC15E41DF06B3000B8076F /* TodoListActions.swift */,
+				DDCC15E61DF06BEC00B8076F /* TodoListReducer.swift */,
 				DDCC15C41DF0671600B8076F /* Main.storyboard */,
 				DDCC15C71DF0671600B8076F /* Assets.xcassets */,
 				DDCC15C91DF0671600B8076F /* LaunchScreen.storyboard */,
@@ -287,11 +287,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				DDCC15E11DF0677100B8076F /* ListViewController.swift in Sources */,
-				DDCC15E51DF06B3000B8076F /* Action.swift in Sources */,
+				DDCC15E51DF06B3000B8076F /* TodoListActions.swift in Sources */,
 				DDCC15E91DF0756900B8076F /* ListViewModel.swift in Sources */,
 				DDCC15C11DF0671600B8076F /* AppDelegate.swift in Sources */,
-				DDCC15E71DF06BEC00B8076F /* Reducer.swift in Sources */,
-				DDCC15E31DF068A400B8076F /* State.swift in Sources */,
+				DDCC15E71DF06BEC00B8076F /* TodoListReducer.swift in Sources */,
+				DDCC15E31DF068A400B8076F /* TodoListState.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

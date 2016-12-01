@@ -10,7 +10,7 @@ import Foundation
 import ReSwift
 
 class ListViewModel {
-    var todoState: State!
+    var todoState: TodoListState!
     var updateHandler: (() -> ())?
     
     init() {
@@ -39,9 +39,9 @@ class ListViewModel {
 }
 
 extension ListViewModel: StoreSubscriber {
-    typealias StoreSubscriberStateType = State
+    typealias StoreSubscriberStateType = TodoListState
     
-    func newState(state: State) {
+    func newState(state: TodoListState) {
         todoState = state
         updateHandler?()
     }

@@ -9,11 +9,11 @@
 import Foundation
 import ReSwift
 
-struct TodoReducer: Reducer {
-    typealias ReducerStateType = State
+struct TodoListReducer: Reducer {
+    typealias ReducerStateType = TodoListState
     
-    func handleAction(action: Action, state: State?) -> State {
-        var newState = state ?? State()
+    func handleAction(action: Action, state: TodoListState?) -> TodoListState {
+        var newState = state ?? TodoListState()
         
         switch action {
         case let addTodo as AddTodo:

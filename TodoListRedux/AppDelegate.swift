@@ -9,7 +9,7 @@
 import UIKit
 import ReSwift
 
-let appStore = Store<State>(reducer: TodoReducer(), state: nil)
+let appStore = Store<TodoListState>(reducer: TodoListReducer(), state: nil)
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
