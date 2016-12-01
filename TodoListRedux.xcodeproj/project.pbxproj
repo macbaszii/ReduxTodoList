@@ -8,11 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		DDCC15C11DF0671600B8076F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDCC15C01DF0671600B8076F /* AppDelegate.swift */; };
-		DDCC15C31DF0671600B8076F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDCC15C21DF0671600B8076F /* ViewController.swift */; };
 		DDCC15C61DF0671600B8076F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDCC15C41DF0671600B8076F /* Main.storyboard */; };
 		DDCC15C81DF0671600B8076F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DDCC15C71DF0671600B8076F /* Assets.xcassets */; };
 		DDCC15CB1DF0671600B8076F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDCC15C91DF0671600B8076F /* LaunchScreen.storyboard */; };
 		DDCC15D61DF0671600B8076F /* TodoListReduxTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDCC15D51DF0671600B8076F /* TodoListReduxTests.swift */; };
+		DDCC15E11DF0677100B8076F /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDCC15E01DF0677100B8076F /* ListViewController.swift */; };
+		DDCC15E31DF068A400B8076F /* State.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDCC15E21DF068A400B8076F /* State.swift */; };
+		DDCC15E51DF06B3000B8076F /* Action.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDCC15E41DF06B3000B8076F /* Action.swift */; };
+		DDCC15E71DF06BEC00B8076F /* Reducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDCC15E61DF06BEC00B8076F /* Reducer.swift */; };
+		DDCC15E91DF0756900B8076F /* ListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDCC15E81DF0756900B8076F /* ListViewModel.swift */; };
+		FA3201AAF3071683D1CDA60B /* Pods_TodoListRedux.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B6CA221E4A12F3E631EEBB4 /* Pods_TodoListRedux.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,9 +31,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3B6CA221E4A12F3E631EEBB4 /* Pods_TodoListRedux.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TodoListRedux.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5E1FC4EEC11585B4BA08BEDA /* Pods-TodoListRedux.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TodoListRedux.release.xcconfig"; path = "Pods/Target Support Files/Pods-TodoListRedux/Pods-TodoListRedux.release.xcconfig"; sourceTree = "<group>"; };
 		DDCC15BD1DF0671600B8076F /* TodoListRedux.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TodoListRedux.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDCC15C01DF0671600B8076F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		DDCC15C21DF0671600B8076F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		DDCC15C51DF0671600B8076F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DDCC15C71DF0671600B8076F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DDCC15CA1DF0671600B8076F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -36,6 +42,12 @@
 		DDCC15D11DF0671600B8076F /* TodoListReduxTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TodoListReduxTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDCC15D51DF0671600B8076F /* TodoListReduxTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoListReduxTests.swift; sourceTree = "<group>"; };
 		DDCC15D71DF0671600B8076F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DDCC15E01DF0677100B8076F /* ListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
+		DDCC15E21DF068A400B8076F /* State.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = State.swift; sourceTree = "<group>"; };
+		DDCC15E41DF06B3000B8076F /* Action.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Action.swift; sourceTree = "<group>"; };
+		DDCC15E61DF06BEC00B8076F /* Reducer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reducer.swift; sourceTree = "<group>"; };
+		DDCC15E81DF0756900B8076F /* ListViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListViewModel.swift; sourceTree = "<group>"; };
+		F1C6CC200C74574D8EDD8498 /* Pods-TodoListRedux.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TodoListRedux.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TodoListRedux/Pods-TodoListRedux.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +55,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA3201AAF3071683D1CDA60B /* Pods_TodoListRedux.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,12 +69,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3F5CB1CC8FFE20F670B106CE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3B6CA221E4A12F3E631EEBB4 /* Pods_TodoListRedux.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5BDBC942D64C718DC6B28014 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F1C6CC200C74574D8EDD8498 /* Pods-TodoListRedux.debug.xcconfig */,
+				5E1FC4EEC11585B4BA08BEDA /* Pods-TodoListRedux.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		DDCC15B41DF0671600B8076F = {
 			isa = PBXGroup;
 			children = (
 				DDCC15BF1DF0671600B8076F /* TodoListRedux */,
 				DDCC15D41DF0671600B8076F /* TodoListReduxTests */,
 				DDCC15BE1DF0671600B8076F /* Products */,
+				5BDBC942D64C718DC6B28014 /* Pods */,
+				3F5CB1CC8FFE20F670B106CE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -78,7 +110,11 @@
 			isa = PBXGroup;
 			children = (
 				DDCC15C01DF0671600B8076F /* AppDelegate.swift */,
-				DDCC15C21DF0671600B8076F /* ViewController.swift */,
+				DDCC15E01DF0677100B8076F /* ListViewController.swift */,
+				DDCC15E81DF0756900B8076F /* ListViewModel.swift */,
+				DDCC15E21DF068A400B8076F /* State.swift */,
+				DDCC15E41DF06B3000B8076F /* Action.swift */,
+				DDCC15E61DF06BEC00B8076F /* Reducer.swift */,
 				DDCC15C41DF0671600B8076F /* Main.storyboard */,
 				DDCC15C71DF0671600B8076F /* Assets.xcassets */,
 				DDCC15C91DF0671600B8076F /* LaunchScreen.storyboard */,
@@ -103,9 +139,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DDCC15DA1DF0671600B8076F /* Build configuration list for PBXNativeTarget "TodoListRedux" */;
 			buildPhases = (
+				021B6A0AFAA87DF108752DE8 /* [CP] Check Pods Manifest.lock */,
 				DDCC15B91DF0671600B8076F /* Sources */,
 				DDCC15BA1DF0671600B8076F /* Frameworks */,
 				DDCC15BB1DF0671600B8076F /* Resources */,
+				8AAFF5E5E1F060A0AA585F53 /* [CP] Embed Pods Frameworks */,
+				D492A748A774D97B458102F8 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -194,13 +233,65 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		021B6A0AFAA87DF108752DE8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		8AAFF5E5E1F060A0AA585F53 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TodoListRedux/Pods-TodoListRedux-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D492A748A774D97B458102F8 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TodoListRedux/Pods-TodoListRedux-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		DDCC15B91DF0671600B8076F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DDCC15C31DF0671600B8076F /* ViewController.swift in Sources */,
+				DDCC15E11DF0677100B8076F /* ListViewController.swift in Sources */,
+				DDCC15E51DF06B3000B8076F /* Action.swift in Sources */,
+				DDCC15E91DF0756900B8076F /* ListViewModel.swift in Sources */,
 				DDCC15C11DF0671600B8076F /* AppDelegate.swift in Sources */,
+				DDCC15E71DF06BEC00B8076F /* Reducer.swift in Sources */,
+				DDCC15E31DF068A400B8076F /* State.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,6 +351,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -309,6 +401,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -335,7 +428,9 @@
 		};
 		DDCC15DB1DF0671600B8076F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F1C6CC200C74574D8EDD8498 /* Pods-TodoListRedux.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = TodoListRedux/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -347,7 +442,9 @@
 		};
 		DDCC15DC1DF0671600B8076F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5E1FC4EEC11585B4BA08BEDA /* Pods-TodoListRedux.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = TodoListRedux/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -404,6 +501,7 @@
 				DDCC15DC1DF0671600B8076F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DDCC15DD1DF0671600B8076F /* Build configuration list for PBXNativeTarget "TodoListReduxTests" */ = {
 			isa = XCConfigurationList;
@@ -412,6 +510,7 @@
 				DDCC15DF1DF0671600B8076F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
